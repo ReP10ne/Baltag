@@ -20,7 +20,7 @@ public class z4 {
         }
         System.out.println();
 
-        System.out.println("Введите элемент для бинарного поиска: ");
+        System.out.println("Введите элемент для двоичного поиска: ");
         int item = sc.nextInt();
         int first = 0;
         int last = size - 1;
@@ -44,11 +44,11 @@ public class z4 {
         }
         if (first <= last) {
             System.out.println(item + " является " + ++position + " элементом в массиве");
-            System.out.println("Метод бинарного поиска нашел число после " + comparisonCount +
+            System.out.println("Метод двоичного поиска нашел число после " + comparisonCount +
                     " сравнений");
         }
         else {
-            System.out.println("Элемент не найден в массиве. Метод бинарного поиска закончил работу после "
+            System.out.println("Элемента нет в массиве. Метод двоичного поиска закончил работу после "
                     + comparisonCount + " сравнений");
         }
     }
