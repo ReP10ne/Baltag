@@ -1,0 +1,25 @@
+package com.company.professions;
+
+public class Driver extends Person {
+    private int drivingExperience;
+
+    public Driver(String fullName, int drivingExperience) {
+        super(fullName, drivingExperience);
+        this.drivingExperience = drivingExperience;
+    }
+
+    public int getDrivingExperience() {
+        return drivingExperience;
+    }
+
+    public void setDrivingExperience(int drivingExperience) {
+        this.drivingExperience = drivingExperience;
+    }
+
+    public String toString() {
+        return "Driver{" +
+                "ФИО='" + getFullName() + '\'' +
+                ", стаж водителя=" + getDrivingExperience() +
+                '}';
+    }
+}
